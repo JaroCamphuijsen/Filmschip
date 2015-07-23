@@ -15,9 +15,13 @@ a{
     color: black;
     }
 
+.credits{
+    color: white;
+}
+
 body {
-    background-image: url("image/Omslagfoto_full.jpg");
-    background-color: #cccccc;
+/*    background-image: url("image/Omslagfoto_full.jpg");
+*/    background-color: #cccccc;
     background-attachment: fixed;
     background-position: center; 
     background-repeat: no-repeat;
