@@ -1,0 +1,54 @@
+h1.title{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    text-align: center;
+    font-size: 40pt;
+    margin: 10px;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+/*    font-family: Georgia, serif;
+*/
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    }
+
+body {
+    background-image: url("image/Omslagfoto_full.jpg");
+    background-color: #cccccc;
+    background-attachment: fixed;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    font-family: "Trebuchet MS", Helvetica, sans-serif ;
+    margin: 0px;
+    /*background-size: auto 150%;*/
+    }
+
+div#creDiv{
+    background-color:rgba(0,0,0,0);
+    color: rgba(200,200,200,1);
+    position: fixed;
+    left: 30px;
+    bottom: 1px;
+    margin: 0px;
+    font-size: 8pt;
+}
+
+div#bgVid{
+    position: fixed;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+
+}
+/*@media (max-aspect-ratio: 1000/369){
+    body {background-size: auto 150%;}
+}
+
+@media (min-aspect-ratio: 1000/369){
+    body {background-size: 100% auto;}
+}*/
