@@ -15,14 +15,24 @@
 
 
   <body>
-    <div id="bgVid" data-vide-bg="mp4: video/Website_Loop_HalfSlow_web.mp4, poster: image/Website_Loop_HalfSlow.still.jpg" data-vide-options="loop: true, muted: true, posterType:jpg">
+    <div id="bgDiv" data-vide-bg="mp4: video/Website_Loop_HalfSlow_web.mp4, poster: image/Website_Loop_HalfSlow.still.jpg" data-vide-options="loop: true, muted: true, posterType:jpg">
       <!--   <audio autoplay loop src="audio/Website_AudioLoop_1.mp3">
             Your browser does not support the audio element.
         </audio> -->
     </div>
     <div id="menuDiv">
     </div>
-    <a href="index.html"><h1 class="title"> 't Filmschip</h1></a>
+    <div class="leftContainer">
+        <div class="titleContainer">
+            <h1 class="title"> 
+                <a href="index.html">'t Filmschip</a>
+            </h1>
+        </div>
+        <div class="anchor" id="contentDiv">
+            <div class="object">
+            </div>
+        </div>
+    </div>
 
 
     <div id="creDiv">
@@ -31,6 +41,7 @@
         </p>
     </div>
 
+    <script src="content.js"></script>
     <script src="menu.js"></script>
     <script src="main.js"></script>
   </body>

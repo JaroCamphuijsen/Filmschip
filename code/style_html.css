@@ -24,7 +24,7 @@ div#menuDiv{
     right: 0px;
     top: 0px;
     height: 100%;
-    width: 200px;
+    width: 16%;
     z-index:20;
 }
 
@@ -47,8 +47,19 @@ body {
     /*background-size: auto 150%;*/
     }
 
+div.leftContainer{
+    position: absolute;
+    width: 84%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+}
+div.contentContainer{
+    height: ;
+}
+
 div#creDiv{
-    background-color:rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0);
     color: rgba(200,200,200,1);
     position: fixed;
     left: 30px;
@@ -57,13 +68,36 @@ div#creDiv{
     font-size: 8pt;
 }
 
-div#bgVid{
+div#bgDiv{
     position: fixed;
     bottom: 0px;
     height: 100%;
     width: 100%;
     margin: 0px;
 
+}
+
+div.object{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -50%;
+    top: -50%; 
+}
+
+div.anchor{
+    position: absolute ;
+}
+
+div#contentDiv{
+    top: 50%;
+    left:50%;
+    height:70%;
+    width: 70%;
+}
+
+div#contentDiv > div.object{
+    background-color: rgba(250,250,250,.3);
 }
 /*@media (max-aspect-ratio: 1000/369){
     body {background-size: auto 150%;}
