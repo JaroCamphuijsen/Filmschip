@@ -11,6 +11,12 @@ h1.title{
 */
 }
 
+iframe{
+    border: 5px;
+    border-style:solid;
+    border-color: black;
+}
+
 a{
     text-decoration: none;
     color: black;
@@ -30,6 +36,7 @@ div#menuDiv{
 
 .menuSvg{
     position: relative;
+    right: 0px;
     width: 200px;
     height: 100%;
     background-color: rgba(0,0,0,.2);
@@ -55,7 +62,8 @@ div.leftContainer{
     top: 0px;
 }
 div.contentContainer{
-    height: ;
+    position: relative;
+    height: 80%;
 }
 
 div#creDiv{
@@ -78,27 +86,30 @@ div#bgDiv{
 }
 
 div.object{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: -50%;
-    top: -50%; 
-}
+    position: relative;
 
-div.anchor{
-    position: absolute ;
 }
 
 div#contentDiv{
-    top: 50%;
-    left:50%;
-    height:70%;
     width: 70%;
-}
-
-div#contentDiv > div.object{
+    height: 70%;
+    padding: 20px;
+    margin-left:auto;
+    margin-right:auto;
+    position: relative;
     background-color: rgba(250,250,250,.3);
 }
+div#video{
+    width: 560px;
+    height: 315px;
+    top: 20px;
+    margin-left:auto;
+    margin-right:auto;
+    position: relative;
+
+}
+
+
 /*@media (max-aspect-ratio: 1000/369){
     body {background-size: auto 150%;}
 }

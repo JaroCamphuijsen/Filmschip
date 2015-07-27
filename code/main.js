@@ -12,6 +12,7 @@ Initiating the menu svg
 var menuSvg = menuDiv.append("svg")
     .attr("class", "menuSvg");
 
+
 buildMenu(menuSvg, pages, ["main"], buttonDim);
 
-
+showContent(contentDiv, pages[0].content);

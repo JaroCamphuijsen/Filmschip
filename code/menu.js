@@ -64,7 +64,12 @@ function buildMenu(svg, pages, categories, buttonDim) {
     button.transition()
         .duration(800)
         .attr("transform", function(d,i){
-            return "translate(" + 0 + buttonDim.offX + "," + ((i * (buttonDim.height + buttonDim.dist)) + buttonDim.offY) + ")"
+            if (d.cat === "main"){ 
+                return "translate(" + buttonDim.offX + "," + ((i * (buttonDim.height + buttonDim.dist)) + buttonDim.offY) + ")"
+            }
+            else{
+                return "translate(" + (buttonDim.subOff + buttonDim.offX) + "," + ((i * (buttonDim.height + buttonDim.dist)) + buttonDim.offY) + ")"
+            }
             });
 
     //exit old buttons
@@ -72,7 +77,12 @@ function buildMenu(svg, pages, categories, buttonDim) {
         .transition()
         .duration(800)
         .attr("transform", function(d,i){
-            return "translate(" + 0 + buttonDim.offX + "," + -buttonDim.height + ")"
+            if (d.cat === "main"){ 
+                return "translate(" + buttonDim.offX + "," + -buttonDim.height + ")"
+            }
+            else{
+                return "translate(" + (buttonDim.subOff + buttonDim.offX) + "," + -buttonDim.height + ")"
+            }
             })
         .remove();
 
@@ -107,6 +117,5 @@ function selectButtons(pages, categories){
 }
 
 function showContent(div, content){
-    div.select(".object")
-        .html(content);
+    div.html(content);
 }
